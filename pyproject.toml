@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "okteto-fastapi-hello-world"
+version = "0.1.0"
+description = ""
+authors = ["Ido Gada <igada@akamai.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.89.0"
+uvicorn = "^0.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^23.1a1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

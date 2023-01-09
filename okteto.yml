@@ -1,0 +1,18 @@
+build:
+  hello-world:
+    context: .
+    image: idogakamai/python-remote-demo:okteto
+deploy:
+  - |
+    helm upgrade --wait --create-namespace --namespace dev --install hello-world chart \
+    --set image.repository=${OKTETO_BUILD_HELLO_WORLD_REPOSITORY} \
+    --set image.tag=okteto \
+    --set fullnameOverride=hello-world
+dev:
+  hello-world:
+    image: python:3.10
+    command: ["bash"]
+    forward:
+      - 8080:8080
+    sync:
+      - .:/app
