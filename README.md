@@ -29,7 +29,7 @@ okteo up --context <context to use> --namespace <namespace to use>
 * Debug :)
 
 ### Notes
-* If you don't want to specify a context in eadh Okteto command enter the following command to set a default namespace
+* If you don't want to specify a context in each Okteto command enter the following command to set a default namespace
 ```shell
 okteto context use <context name>
 ```
