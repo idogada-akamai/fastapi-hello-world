@@ -5,9 +5,9 @@ router = APIRouter()
 
 @router.get("/hello")
 def hello():
-    return "Hello! this is a FastAPI shugibugi"
+    return "Hello! this is a FastAPI application"
 
 
 @router.get("/")
 def home_page():
-    return "this is the tirsntiersnt rstnresmterns"
+    return "this is the home page"
