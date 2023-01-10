@@ -11,20 +11,15 @@ This repository demos the flow of how to use FastAPI with Python to develop remo
 
 ## How to start?
 
-* Open VS Code on your machine and enter the following command in the terminal:
+* Clone the repo your machine and enter the following command in the terminal:
 ```shell
-okteto deploy --build --context <context to use> --namespace <namespace to use>
+./okteto up --deploy --context <context to use> --namespace <namespace to use>
 ```
-This command will build the Docker image, push it to the registry and deploy the application to the cluster using the Helm chart.
-
-*  Run the following command to create the dev container and connect to it
-```shell
-okteo up --context <context to use> --namespace <namespace to use>
-```
+This command will deploy the application and shell into your dev container
 
 * Open the `Remote Explorer` on the side panel in VS Code -> select hello-word.okteto (open in a new window)
 
-* Open extensions, install the recommended ones
+* Open the source code path (`/app`) and wait for the tasks to complete
 
 * Debug :)
 
