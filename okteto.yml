@@ -10,7 +10,7 @@ deploy:
     --set fullnameOverride=hello-world
 dev:
   hello-world:
-    image: python:3.10
+    image: idogakamai/python-remote-demo:okteto-dev-python-3.10
     command: ["bash"]
     forward:
       - 8000:8000
